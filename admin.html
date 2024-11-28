@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administratora</title>
+</head>
+<body>
+    <h1>👨‍💼 Panel Administratora</h1>
+    <h2>Wyniki losowania:</h2>
+    <ul>
+        {% for user, pair in pairs.items() %}
+            <li>{{ user }} wylosował/a: {{ pair }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/logout">Wyloguj się</a>
+</body>
+</html>
